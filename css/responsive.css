@@ -1,0 +1,414 @@
+/* =========================================
+   DESKTOP → TABLET
+   SAME LAYOUT
+========================================= */
+
+@media (max-width:1200px){
+
+    .container{
+        width:94%;
+    }
+
+    /* Hero */
+
+    .hero{
+        padding:80px;
+    }
+
+    .hero-left{
+        max-width:55%;
+    }
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-badge{
+        font-size:13px;
+    }
+
+    .feature span{
+        font-size:16px;
+    }
+
+    .btn{
+        min-width:180px;
+        font-size:16px;
+    }
+
+    /* Sections */
+
+    .services-section,
+    .why-us-section,
+    .portfolio-section,
+    .gallery-section,
+    .cta-section,
+    .map-section{
+        padding:100px 0;
+    }
+
+    .section-title h2{
+        font-size:48px;
+    }
+
+    .section-title p{
+        font-size:18px;
+    }
+
+    /* Service */
+
+    .service-card{
+        padding:30px;
+    }
+
+    .service-card h3{
+        font-size:28px;
+    }
+
+    .service-card p{
+        font-size:18px;
+    }
+
+    /* Why us */
+
+    .feature-content h3{
+        font-size:22px;
+    }
+
+    .feature-content p{
+        font-size:16px;
+    }
+
+    /* Portfolio */
+
+    .portfolio-content h3{
+        font-size:30px;
+    }
+
+    /* Gallery */
+
+    .gallery-item{
+        height:360px;
+    }
+
+    .gallery-content h3{
+        font-size:38px;
+    }
+
+    .gallery-content span{
+        font-size:18px;
+    }
+
+    /* CTA */
+
+    .cta-section h2{
+        font-size:56px;
+    }
+
+    .cta-section p{
+        font-size:22px;
+    }
+
+    /* Footer */
+
+    .footer-logo h3{
+        font-size:30px;
+    }
+
+    .footer-title{
+        font-size:28px;
+    }
+
+    .footer-desc,
+    .footer-contact li,
+    .footer-links li a{
+        font-size:18px;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .header-btn{
+        display:none;
+    }
+
+    .navbar{
+        position:fixed;
+        top:72px;
+        right:-100%;
+        width:280px;
+        height:100vh;
+        background:#fff;
+        transition:.4s;
+        box-shadow:0 10px 30px rgba(0,0,0,.1);
+    }
+
+    .navbar.active{
+        right:0;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        padding:30px;
+        gap:20px;
+    }
+
+    /* Hero */
+
+    .hero{
+        padding:130px 20px 80px;
+        min-height:auto;
+        background-position:70% center;
+    }
+
+    .hero-content{
+        justify-content:center;
+    }
+
+    .hero-left{
+        max-width:100%;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+        max-width:100%;
+    }
+
+    .hero-features{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .feature:not(:last-child)::after{
+        display:none;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    /* Grids */
+
+    .services-grid,
+    .features-grid,
+    .portfolio-grid,
+    .map-info,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Gallery */
+
+    .gallery-item{
+        height:280px;
+    }
+
+    .gallery-content h3{
+        font-size:28px;
+    }
+
+    .gallery-content span{
+        font-size:16px;
+    }
+
+    .gallery-overlay{
+        padding:25px;
+    }
+
+    .gallery-btn{
+        width:50px;
+        height:50px;
+        font-size:18px;
+    }
+
+    /* CTA */
+
+    .cta-section h2{
+        font-size:34px;
+    }
+
+    .cta-section p{
+        font-size:18px;
+    }
+
+    .cta-phone a,
+    .cta-main-btn,
+    .cta-btn{
+        width:100%;
+        min-width:100%;
+    }
+
+    /* Footer */
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    /* =========================
+   FAQ MOBILE
+========================= */
+
+.faq-section{
+    padding:80px 0;
+}
+
+.faq-container{
+    width:100%;
+}
+
+.faq-question{
+
+    padding:20px;
+
+    font-size:17px;
+
+    line-height:1.7;
+}
+
+.faq-question i{
+
+    min-width:36px;
+
+    width:36px;
+
+    height:36px;
+
+    font-size:14px;
+}
+
+.faq-answer p{
+
+    padding:
+        0 20px 20px;
+
+    font-size:15px;
+
+    line-height:1.9;
+}
+
+.faq-cta{
+
+    margin-top:40px;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.faq-cta p{
+
+    font-size:16px;
+}
+
+.faq-cta-btn{
+
+    width:100%;
+
+    min-width:100%;
+}
+/* ========================================
+   VIDEO SECTION MOBILE
+======================================== */
+
+.video-section{
+
+    padding:80px 0;
+
+}
+
+
+.video-wrapper{
+
+    margin-top:35px;
+
+    border-radius:18px;
+}
+
+
+.business-video{
+
+    min-height:240px;
+
+}
+
+
+.video-overlay-content{
+
+    padding:20px;
+}
+
+
+.video-play-icon{
+
+    width:55px;
+
+    height:55px;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+}
+
+
+.video-overlay-content h3{
+
+    font-size:22px;
+
+}
+
+
+.video-overlay-content span{
+
+    font-size:14px;
+
+}
+
+
+.video-features{
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:20px;
+}
+
+
+.video-feature{
+
+    min-height:70px;
+
+    padding:15px;
+
+    font-size:14px;
+
+    flex-direction:column;
+
+    gap:7px;
+}
+
+}
